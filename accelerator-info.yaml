@@ -1,0 +1,30 @@
+id: 77c7f74d-5461-4dce-8b1c-46c47c436c09
+timestamp: 2024-01-12T09:18:34.305Z
+source: TAP-GUI
+username: viktoriousss
+accelerator:
+  name: java-rest-service
+fragments:
+  - name: build-wrapper-gradle
+  - name: build-wrapper-maven
+  - name: live-update
+  - name: spring-boot-database
+  - name: spring-boot-h2
+  - name: spring-boot-mysql
+  - name: spring-boot-postgresql
+  - name: tap-workload
+  - name: testcontainers-mysql
+  - name: testcontainers-postgresql
+options:
+  projectName: nl-java-rest-service
+  artifactId: customer-profile
+  groupId: com.example
+  packageName: com.example.customerprofile
+  buildTool: maven
+  exposeOpenAPIEndpoint: false
+  databaseType: postgres
+  databaseMigrationTool: flyway
+  databaseIntegrationTestType: testcontainers
+  includeBuildToolWrapper: true
+  databaseName: customer-database
+  liveUpdateIDESupport: true
