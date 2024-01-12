@@ -1,5 +1,5 @@
-id: 77c7f74d-5461-4dce-8b1c-46c47c436c09
-timestamp: 2024-01-12T09:18:34.305Z
+id: 58d6e334-c5ca-4d1d-9e18-4491c16dfd52
+timestamp: 2024-01-12T09:51:56.496Z
 source: TAP-GUI
 username: viktoriousss
 accelerator:
@@ -16,15 +16,18 @@ fragments:
   - name: testcontainers-mysql
   - name: testcontainers-postgresql
 options:
-  projectName: nl-java-rest-service
+  projectName: java-rest-service
   artifactId: customer-profile
   groupId: com.example
   packageName: com.example.customerprofile
-  buildTool: maven
-  exposeOpenAPIEndpoint: false
+  buildTool: gradle
+  exposeOpenAPIEndpoint: true
   databaseType: postgres
   databaseMigrationTool: flyway
   databaseIntegrationTestType: testcontainers
   includeBuildToolWrapper: true
+  apiSystem: profile-management
+  apiOwner: customer-relations-department
+  apiDescription: Manage customer profiles
   databaseName: customer-database
   liveUpdateIDESupport: true

@@ -28,10 +28,10 @@ In order to further develop this application the following tools needs to be set
 
 In order to compile the production code:
 
-```bash
-./mvnw clean compile
-```
 
+```bash
+./gradlew clean compileJava
+```
 
 ## Database
 
@@ -41,10 +41,10 @@ You will need a local database running, see [DATABASE.md](DATABASE.md#local).
 
 After that it is a good habit to compile the test classes and execute those tests to see if your application is still behaving as you would expect:
 
-```bash
-./mvnw verify
-```
 
+```bash
+./gradlew compileTestJava build
+```
 
 ## Start and interact
 
@@ -52,10 +52,10 @@ Spring Boot has its own integrated Web Server (Apache Tomcat (https://tomcat.apa
 to start the application a database instance should be running.
 
 Launch application using a `docker-compose` database instance:
-```bash
-./mvnw spring-boot:run
-```
 
+```bash
+./gradlew bootRun
+```
 
 ### OpenApi Definition
 
