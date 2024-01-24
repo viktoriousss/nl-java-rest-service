@@ -9,4 +9,4 @@ spec:
   lifecycle: experimental
   owner: dutch-team
   providesApis:
-    - customer-profile
+    - ns-production/customer-profile-95b0f7c
